@@ -28,12 +28,41 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .boton{
-    width: 3rem;
     height: 1.3rem;
+    margin-top: 1rem;
     margin-bottom: .3rem;
     border: none;
     border-radius: 2px;
     background-color: rgb(56, 58, 58);
     color: #fff;
     cursor: pointer;
+}
+.boton1{
+    width: 8rem;
+}
+.boton2{
+    width: 3.5rem;
+}
+/* Estilos del formulario*/
+.formulario{
+    width: 75%;
+    margin: auto;
+}
+.div_form{
+    margin-top: 1rem;
+}
+.textoLabel{
+    display: block;
+    margin: auto;
+    font-size: 1.3rem;
+}
+.datos{
+    width: auto;
+    height: 1.3rem;
+    margin-left: 4;
+    border: none;
+    border-radius: 2px;
+}
+.datos1{
+    width: 11rem;
 }
