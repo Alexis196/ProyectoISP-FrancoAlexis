@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>ISP</title>
+    <script src="js/usuarioClass.js"></script>
 </head>
 <body>
     <main class="principal">
@@ -15,32 +16,36 @@
                 Somos una empresa que presta servicio de internet para todos, ya que sabemos qué tan importante es su uso en el día a día de las personas. Esperamos poder responder todas tus dudas.
             </p>
             <div class="contenedor">
-                <p class="parrafo">¿Le gustaría conocer todos los planes y benificios que tenemos para usted? </p>
-                <input class='boton' type="button" value="Si" id="uno">
-                <input class='boton' type="button" value="No" id="dos">
-            </div>
-            <div class="contenedor">
                 <p class="parrafo">¿Podrías dejarnos tus datos para contactarnos contigo?</p>
                 <div>
-                    <form action="">
+                    <form action="" id="form">
                         <div>
                             <label for="">Nombre</label>
-                            <input type="text" placeholder="Introduzca su nombre" id="inUno">
+                            <input type="text" placeholder="Introduzca su nombre" id="inU" required>
                         </div>
                         <div>
                             <label for="">Apellido</label>
-                            <input type="text" placeholder="Introduzca su apellido" id="inDos">
+                            <input type="text" placeholder="Introduzca su apellido" id="inD" required>
+                        </div>
+                        <div>
+                            <label for="">Servicios mensuales disponibles:</label>
+                            <select name="megas" id="megas">
+                                <option value="4mb">4Mb  $1900</option>
+                                <option value="6mb">6Mb  $2300</option>
+                                <option value="8mb">8Mb  $2800</option>
+                                <option value="10mb">10Mb  $3200</option>
+                            </select>
                         </div>
                         <div>
                             <label for="">Edad</label>
-                            <input type="number" placeholder="Introdezca su edad" id="inTres">
+                            <input type="number" placeholder="Introdezca su edad" id="inT" required>
                         </div>
                         <div>
                             <label for="">Dirección</label>
-                            <input type="text" placeholder="Intruduzca su dirección" id="inC">
+                            <input type="text" placeholder="Intruduzca su dirección" id="inC" required>
                         </div>
                         <div>
-                            <input type="reset" value="Limpiar Formulario">
+                            <input type="button" value="Generar Usuario" id="generar">
                             <input type="submit" id="enviar">
                         </div>
                     </form>
@@ -48,6 +53,6 @@
             </div>
         </section>
     </main>
-    <script src="js/app.js"></script>
+    <script src="js/listaUsuarios.js"></script>
 </body>
 </html>
