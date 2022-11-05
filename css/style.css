@@ -14,6 +14,7 @@ body{
     width: 60%;
     margin: auto;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     border: 2px solid rgb(170, 169, 169);
     border-radius: 5px;
 }
@@ -27,6 +28,9 @@ body{
     font-size: 1.3rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.parrafoDiv{
+    color: rgb(39, 40, 39);
+}
 .boton{
     height: 1.3rem;
     margin-top: 1rem;
@@ -36,6 +40,9 @@ body{
     background-color: rgb(56, 58, 58);
     color: #fff;
     cursor: pointer;
+}
+.btna{
+    width: 3.7rem;
 }
 .boton1{
     width: 8rem;
