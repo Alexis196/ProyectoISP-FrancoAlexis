@@ -19,7 +19,7 @@ enviar.addEventListener('click', (e)=>
     let persona = new Usuario(inU.value,inD.value,parseInt(inT.value),inC.value,megas.value);
     usuarios.push(persona);
     console.log(usuarios);
-    usuarios = localStorage.setItem('cliente',(JSON.stringify(usuarios)));
+    localStorage.setItem('cliente',(JSON.stringify(usuarios)));
     const parrafo = document.querySelector('.parrafoDiv2');
     parrafo.innerHTML = 'Hemos recibido tus datos. Pronto nos contactaremos contigo';
     
