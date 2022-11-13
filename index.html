@@ -22,16 +22,24 @@
                 <p class="parrafo parrafoDiv"></p>
             </div>
             <div class="contenedor">
-                <p class="parrafo">¿Podrías dejarnos tus datos para contactarnos contigo?</p>
+                <p class="parrafo">Si desea contratar el servicio completa el siguente formulario</p>
                 <div class="formulario">
                     <form action="" id="form">
                         <div class="div_form">
-                            <label for="" class="textoLabel">Nombre</label>
+                            <label for="" class="textoLabel">Nombre:</label>
                             <input type="text" placeholder="Introduzca su nombre" id="inU" required class="datos">
                         </div>
                         <div class="div_form">
-                            <label for="" class="textoLabel">Apellido</label>
+                            <label for="" class="textoLabel">Apellido:</label>
                             <input type="text" placeholder="Introduzca su apellido" id="inD" required class="datos">
+                        </div>
+                        <div class="div_form">
+                            <label for="" class="textoLabel">Teléfono:</label>
+                            <input type="number" placeholder="Introdezca su teléfono" id="inT" required class="datos">
+                        </div>
+                        <div class="div_form">
+                            <label for="" class="textoLabel">Dirección:</label>
+                            <input type="text" placeholder="Intruduzca su dirección" id="inC" required class="datos">
                         </div>
                         <div class="div_form">
                             <label for="" class="textoLabel">Servicios:</label>
@@ -42,16 +50,8 @@
                                 <option value="10mb">10Mb  $3200</option>
                             </select>
                         </div>
-                        <div class="div_form">
-                            <label for="" class="textoLabel">Edad</label>
-                            <input type="number" placeholder="Introdezca su edad" id="inT" required class="datos">
-                        </div>
-                        <div class="div_form">
-                            <label for="" class="textoLabel">Dirección</label>
-                            <input type="text" placeholder="Intruduzca su dirección" id="inC" required class="datos">
-                        </div>
                         <div>
-                            <input type="submit" id="enviar" class="boton boton2">
+                            <input type="submit" id="enviar" class="boton boton2" value="Contratar servicio">
                         </div>
                     </form>
                     <p class="parrafo parrafoDiv2"></p>
@@ -61,5 +61,6 @@
     </main>
     <script src="js/index.js"></script>
     <script src="js/listaUsuarios.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

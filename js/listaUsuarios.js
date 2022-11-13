@@ -20,7 +20,12 @@ enviar.addEventListener('click', (e)=>
     usuarios.push(persona);
     console.log(usuarios);
     localStorage.setItem('cliente',(JSON.stringify(usuarios)));
-    const parrafo = document.querySelector('.parrafoDiv2');
-    parrafo.innerHTML = 'Hemos recibido tus datos. Pronto nos contactaremos contigo';
-    
+    let descarga = JSON.parse(localStorage.getItem('cliente'));
+    console.log(descarga);
+    Swal.fire({
+        title:`Muchas gracias ${usuarios[0].nombre}`,
+        text:'Pronto nos contactaremos contigo.',
+        icon: 'success',
+        footer: 'SERVICIO DE INTERNET',
+    })
 })
