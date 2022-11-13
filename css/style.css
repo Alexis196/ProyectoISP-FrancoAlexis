@@ -9,6 +9,7 @@ body{
     place-content: center;
     text-align: center;
     background: linear-gradient(rgb(127, 159, 223), rgb(59, 138, 148), rgb(127, 159, 223));
+    background-attachment: fixed;
 }
 .section{
     width: 60%;
