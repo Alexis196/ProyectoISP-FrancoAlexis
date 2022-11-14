@@ -80,3 +80,22 @@ body{
 .datos1{
     width: 10.7rem;
 }
+
+.aside{
+    position: absolute;
+    padding: .5rem;
+    top: 7.41rem;
+    right: 2rem;
+    border: 1px solid #c4c4c4;
+}
+.botonAside{
+    margin-top: 0;
+}
+.datosUsuario{
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+.parrafoObject{
+    font-size: 1rem;
+}

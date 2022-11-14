@@ -13,6 +13,7 @@ const clasificar = document.getElementById('megas');
 // Eventos
 let enviar = document.getElementById('enviar');
 let confirma = document.querySelector('.btnConfirma');
+let infoUsuario = document.querySelector('.botonAside');
 
 enviar.addEventListener('click', (e)=>
 {
@@ -39,3 +40,16 @@ confirma.addEventListener('click', (e)=>{
         footer: 'SERVICIO DE INTERNET',
     })
 })
+
+infoUsuario.addEventListener('click', ()=>{
+    fetch('/')
+    .then((resp)=>{
+        return JSON.parse(localStorage.getItem('cliente'));
+    })
+    .then((data)=>{
+            let resultado = document.querySelector('.parrafoObject');
+            resultado.innerHTML = JSON.stringify(data, null, 2);
+        })
+        
+})
+
