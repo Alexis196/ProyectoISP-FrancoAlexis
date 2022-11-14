@@ -25,7 +25,7 @@ enviar.addEventListener('click', (e)=>
     if (boton2 != 0){
         let text = document.querySelector('.textoConfirma');
         text.innerHTML= `El costo de la instalación es de $3500. <br>
-        El servicio solicitado (${usuarios[0].megas}) lo pagarás del 01 al 10 del siguiente mes.`;
+        El servicio solicitado (${descarga[0].megas}) lo pagarás del 01 al 10 del siguiente mes.`;
     }
 })
 
